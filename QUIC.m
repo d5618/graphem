@@ -1,4 +1,4 @@
-function [X, W, opt, time, iter, dGap] = QUIC("mode", S, L, tol, msg, maxIter, X0, W0)
+function [X, W, opt, time, iter, dGap] = QUIC(mode, S, L, tol, msg, maxIter, X0, W0)
 % [X W opt time iter dGap] = QUIC(mode, ...)
 % [X W opt time iter dGap] = QUIC("default", S, L, tol, msg, ...
 %                                 maxIter, X0, W0)
