@@ -14,7 +14,7 @@ function [adjmat, sparsity] = fastpath(X,t_sparsity, nmax)
     
     while i < nmax & sparsity(i) < t_sparsity
         i = i+1;
-        [W,O] = graphical_lasso(S,lambdas(i));
+        [W,O] = GraphicalLasso(S,lambdas(i));
         [sparsity(i), adjmat{i}] = sp_level(O);
     end
 

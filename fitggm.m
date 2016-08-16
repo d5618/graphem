@@ -35,9 +35,9 @@ end
 p = size(S,1);   % Number of variables
 pp = p*(p-1)/2;    
 
-if cond(S) > thre  % if matrix is ill-conditioned (usually first few iterations)
-    S = S + 0.1*eye(p); % apply small amount of Tikhonov regularization
-end
+%if cond(S) > thre  % if matrix is ill-conditioned (usually first few iterations)
+%    S = S + 0.1*eye(p); % apply small amount of Tikhonov regularization
+%end
 
 W = S;   % Initial estimate of the covariance matrix
 
